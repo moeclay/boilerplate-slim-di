@@ -1,0 +1,10 @@
+# Jalankan docker-compose.yml
+docker compose up -d
+
+Ubah .env MAILER_DSN
+test register lagi
+cek email di http://localhost:8025
+
+## Port penting Mailpit
+1025 = SMTP server untuk menerima email dari aplikasi
+8025 = web UI untuk lihat email

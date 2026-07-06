@@ -1,0 +1,50 @@
+{
+  "name": "manager-it/phpdi-boilerplate",
+  "description": "Slim Framework boilerplate with PHP-DI, JWT auth, logger middleware, email verification, and CRUD APIs.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*",
+    "ext-pdo_sqlite": "*",
+    "firebase/php-jwt": "^7.1",
+    "monolog/monolog": "^3.8",
+    "php-di/php-di": "^7.1",
+    "php-di/slim-bridge": "^3.4",
+    "ramsey/uuid": "^4.7",
+    "slim/psr7": "^1.7",
+    "slim/slim": "^4.14",
+    "symfony/mailer": "^7.2",
+    "symfony/mime": "^7.2",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5",
+    "phpstan/phpstan": "^1.12",
+    "friendsofphp/php-cs-fixer": "^3.65",
+    "robmorgan/phinx": "^0.16"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "analyse": "phpstan analyse src --level=5",
+    "cs": "php-cs-fixer fix --dry-run --diff"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}

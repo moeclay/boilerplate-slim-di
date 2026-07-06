@@ -1,0 +1,53 @@
+# ==============================
+# 1. Composer Dependencies
+# ==============================
+# Folder vendor berisi ratusan file library dari composer. 
+# Orang lain cukup menjalankan 'composer install' untuk mendapatkannya.
+/vendor/
+composer.phar
+
+# ==============================
+# 2. Environment Variables & Secrets
+# ==============================
+# JANGAN PERNAH commit file .env ke Git karena berisi password DB, API Key, dll.
+.env
+.env.backup
+.env.production
+.env.local
+
+# ==============================
+# 3. Logs & Cache (Jika ada)
+# ==============================
+# File log dan cache yang di-generate oleh sistem/Slim
+/logs/*
+!/logs/.gitkeep
+/cache/*
+!/cache/.gitkeep
+
+# ==============================
+# 4. OS Generated Files
+# ==============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==============================
+# 5. IDE & Editor Files
+# ==============================
+# Konfigurasi lokal dari editor kode masing-masing developer
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==============================
+# 6. Project Outputs
+# ==============================
+# Mengabaikan seluruh folder output beserta isinya
+# /output/
+# /test/
+# /storage/

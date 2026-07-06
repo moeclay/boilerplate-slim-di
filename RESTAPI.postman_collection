@@ -1,0 +1,348 @@
+{
+  "info": {
+    "_postman_id": "d99c83c2-e412-4bcc-b2b8-1d405abb9461",
+    "name": "IL-PHPDI-Boilplate",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "4033629",
+    "_collection_link": "https://go.postman.co/collection/4033629-d99c83c2-e412-4bcc-b2b8-1d405abb9461?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "01 Health",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/health",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "02 Register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "moeamarreza@gmail.com",
+              "type": "text",
+              "uuid": "35b45b00-732b-41b5-9aa8-e207d97e607e"
+            },
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "text",
+              "uuid": "31528330-a842-4483-9c86-5d37f9af5fac"
+            },
+            {
+              "key": "name",
+              "value": "Reza Moe",
+              "type": "text",
+              "uuid": "c7011d7e-3d63-46d5-bb9d-f82f7ad0883d"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "03 Login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "moeamarreza@gmail.com",
+              "type": "text",
+              "uuid": "1a124070-407c-477e-b637-cb0eddec982c"
+            },
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "text",
+              "uuid": "c704a60d-91d3-4194-a640-c96afa71fb94"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "04 Profile Me",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHBkaS1ib2lsZXJwbGF0ZSIsImF1ZCI6InBocGRpLWJvaWxlcnBsYXRlLXVzZXJzIiwiaWF0IjoxNzgzMjU0MjMxLCJleHAiOjE3ODMyNTc4MzEsInN1YiI6MiwiZW1haWwiOiJtb2VhbWFycmV6YUBnbWFpbC5jb20iLCJuYW1lIjoiUmV6YSBNb2UiLCJhcGlfa2V5X3ByZWZpeCI6InBrXyJ9.1qbPizPAE88Qld6Lbm8gvddoQbE0RuJnZJuRkD_cIlo",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/me",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CRUD - Contact",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHBkaS1ib2lsZXJwbGF0ZSIsImF1ZCI6InBocGRpLWJvaWxlcnBsYXRlLXVzZXJzIiwiaWF0IjoxNzgzMjU0MjMxLCJleHAiOjE3ODMyNTc4MzEsInN1YiI6MiwiZW1haWwiOiJtb2VhbWFycmV6YUBnbWFpbC5jb20iLCJuYW1lIjoiUmV6YSBNb2UiLCJhcGlfa2V5X3ByZWZpeCI6InBrXyJ9.1qbPizPAE88Qld6Lbm8gvddoQbE0RuJnZJuRkD_cIlo",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/contact",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "contact"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CRUD - Contact Add",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHBkaS1ib2lsZXJwbGF0ZSIsImF1ZCI6InBocGRpLWJvaWxlcnBsYXRlLXVzZXJzIiwiaWF0IjoxNzgzMjU0MjMxLCJleHAiOjE3ODMyNTc4MzEsInN1YiI6MiwiZW1haWwiOiJtb2VhbWFycmV6YUBnbWFpbC5jb20iLCJuYW1lIjoiUmV6YSBNb2UiLCJhcGlfa2V5X3ByZWZpeCI6InBrXyJ9.1qbPizPAE88Qld6Lbm8gvddoQbE0RuJnZJuRkD_cIlo",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Ajeng",
+              "type": "text",
+              "uuid": "aae1cfc6-6168-4891-bb28-87bc060134e1"
+            },
+            {
+              "key": "email",
+              "value": "ajeng@email.com",
+              "type": "text",
+              "uuid": "a2b3e84b-cb98-4e59-8366-21be7597b97b"
+            },
+            {
+              "key": "phone",
+              "value": "62823142",
+              "type": "text",
+              "uuid": "2d0b5fcf-7878-4613-973a-4ed0fc1ce853"
+            },
+            {
+              "key": "message",
+              "value": "ajengbogor",
+              "type": "text",
+              "uuid": "2cb5c299-ec71-42f4-b543-f34621bad965"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/contact",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "contact"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CRUD - Contact Get Id",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHBkaS1ib2lsZXJwbGF0ZSIsImF1ZCI6InBocGRpLWJvaWxlcnBsYXRlLXVzZXJzIiwiaWF0IjoxNzgzMjU0MjMxLCJleHAiOjE3ODMyNTc4MzEsInN1YiI6MiwiZW1haWwiOiJtb2VhbWFycmV6YUBnbWFpbC5jb20iLCJuYW1lIjoiUmV6YSBNb2UiLCJhcGlfa2V5X3ByZWZpeCI6InBrXyJ9.1qbPizPAE88Qld6Lbm8gvddoQbE0RuJnZJuRkD_cIlo",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/contact/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "contact",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CRUD - Contact Put Id",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHBkaS1ib2lsZXJwbGF0ZSIsImF1ZCI6InBocGRpLWJvaWxlcnBsYXRlLXVzZXJzIiwiaWF0IjoxNzgzMjU0MjMxLCJleHAiOjE3ODMyNTc4MzEsInN1YiI6MiwiZW1haWwiOiJtb2VhbWFycmV6YUBnbWFpbC5jb20iLCJuYW1lIjoiUmV6YSBNb2UiLCJhcGlfa2V5X3ByZWZpeCI6InBrXyJ9.1qbPizPAE88Qld6Lbm8gvddoQbE0RuJnZJuRkD_cIlo",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "name",
+              "value": "Ajeng Ayunda",
+              "type": "text",
+              "uuid": "5b8facf9-4921-4a10-a743-41e22472e077"
+            },
+            {
+              "key": "email",
+              "value": "aheng_ayu@gmail.com",
+              "type": "text",
+              "uuid": "87124893-1bf9-4d03-bdf0-29527045bae2"
+            },
+            {
+              "key": "phone",
+              "value": "62123456789",
+              "type": "text",
+              "uuid": "71862dc3-d99a-4056-8b80-5c01cf9e87ae"
+            },
+            {
+              "key": "message",
+              "value": "ayunda ajeng bogor",
+              "type": "text",
+              "uuid": "1e350941-bb60-40fa-9c88-ece49b34fab9"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/contact/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "contact",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CRUD - Contact Delete Id",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaHBkaS1ib2lsZXJwbGF0ZSIsImF1ZCI6InBocGRpLWJvaWxlcnBsYXRlLXVzZXJzIiwiaWF0IjoxNzgzMjU0MjMxLCJleHAiOjE3ODMyNTc4MzEsInN1YiI6MiwiZW1haWwiOiJtb2VhbWFycmV6YUBnbWFpbC5jb20iLCJuYW1lIjoiUmV6YSBNb2UiLCJhcGlfa2V5X3ByZWZpeCI6InBrXyJ9.1qbPizPAE88Qld6Lbm8gvddoQbE0RuJnZJuRkD_cIlo",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/contact/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "contact",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

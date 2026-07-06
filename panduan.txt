@@ -1,0 +1,16 @@
+composer install
+vendor\bin\phinx migrate -c phinx.php
+vendor\bin\phinx seed:run -c phinx.php
+
+del storage\sqlite\app.sqlite
+vendor\bin\phinx migrate -c phinx.php
+vendor\bin\phinx seed:run -c phinx.php
+
+
+composer install
+php -S localhost:8080 -t public public/index.php
+
+
+Port penting Mailpit
+1025 = SMTP server untuk menerima email dari aplikasi
+8025 = web UI untuk lihat email
